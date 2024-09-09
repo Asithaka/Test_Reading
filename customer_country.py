@@ -13,3 +13,7 @@ for rec in csv_obj:
     Country = rec[4]
 
     print(f'{Name, Country}')
+    
+    print(Name)
+
+ 
