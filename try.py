@@ -21,6 +21,8 @@ my_dict = {'1' : 'January',
 
 my_list = ['1','2','3','4','5','6','7','8','9','10','11','12']
 
+
+
 for rec in my_list:
 
     counter = 0
@@ -28,7 +30,7 @@ for rec in my_list:
   
     for line in st_obj: 
 
-            if  line[0] == rec:
+            while  line[0] <= rec:
         
                 Month = my_dict[rec]   
 
@@ -38,8 +40,6 @@ for rec in my_list:
 
                 avg_step = total/counter
 
-            else: 
-                break
               
     print( f"{Month}"+'- ' + str(f"{avg_step: ,.2f}, {counter},{total}") )
 
