@@ -21,27 +21,33 @@ my_dict = {'1' : 'January',
 
 my_list = ['1','2','3','4','5','6','7','8','9','10','11','12']
 
+rows = list(st_obj)
+
 for rec in my_list:
 
     counter = 0
     total   = 0
   
-    for line in st_obj: 
-
+    for line in rows: 
+                
             if  line[0] == rec:
-        
+
                 Month = my_dict[rec]   
 
                 counter += 1
 
                 total   +=  int(line[1])
+            
+    avg_step = total/counter
 
-                avg_step = total/counter
+           # else:
 
-            else: 
-                break
+            #    break    
               
-    print( f"{Month}"+'- ' + str(f"{avg_step: ,.2f}, {counter},{total}") )
+    #print( f"{Month}"+'- ' + str(f"{avg_step: ,.2f}, {counter},{total}") )
+
+    print( f"{Month}"+'- ' + str(f"{avg_step: ,.2f}") )
+
 
 
 
