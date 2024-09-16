@@ -8,11 +8,19 @@ emp_dat = csv.reader(emp_file)
 next(emp_dat)
 
 for rec in emp_dat:
+    Salary = float((rec[3]))
+    Bonus = float(rec[3]) * float((rec[7]))
+    Total_Salary = Salary + Bonus
 
-    Total_Salary = float(rec[3]) * (1+float(rec[7]))
+    print(f"Name : {rec[1]}")
 
-    Total_Salary = int(Total_Salary)
+    print(f"Salary: $ {Salary:,.2f}")
 
-    print(f"{rec[1]},{' '+'$' +' '+ str(Total_Salary)}")
+    print(f"Bonus:  $ {Bonus:,.2f}")
+
+    print(f"Pay:    $ {Total_Salary:,.2f} \n")
+
+    #print("Bonus:"+'$' +' '+ str(f"{Bonus:,.2f)}"))
+    #print("Pay:" + '$' +' '+ str(f"{Total_Salary:,.2f)} \n "))
 
   
