@@ -16,7 +16,7 @@ for rec in emp_dat:
 
     print(f"Salary: $ {Salary:,.2f}")
 
-    print(f"Bonus:  $ {Bonus:,.2f}")
+    print(f"Bonus:  $  {Bonus:,.2f}")
 
     print(f"Pay:    $ {Total_Salary:,.2f} \n")
 
